@@ -1,0 +1,122 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Quicksand:400,700';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --body-background: #F8F9FA;
+    --sidenav-bg: #fff;
+    --body-bg-grad1: #ffffff;
+    --body-bg-grad2: #eef2f5;
+    --primary: #17C1E8;
+    --primary-hover: #0F809A;
+    --white:#fff;
+    --sidenav-gray:#A0AEC0;
+    --sidenav-text-active:#344767
+}
+
+.bg-body {
+    background-color: var(--body-background) !important;
+}
+
+#sidenav::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    opacity: .6;
+}
+
+#sidenav::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #F5F5F5;
+    opacity: .6;
+}
+
+#sidenav::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgba(52, 71, 103, .6);
+    opacity: .6;
+}
+
+#sidenav {
+    background-color: var(--body-background);
+}
+
+.sidenav-brand {
+    color: #2D3748;
+    font-family: Helvetica;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+    opacity: .6;
+    /* 21px */
+    letter-spacing: .08rem;
+    ;
+}
+.nav-item.nav-label {
+    opacity: .6;
+    color: #344767;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 18px */
+}
+
+.sidenav-item
+{
+    border-radius:18px
+}
+hr.faded-divider {
+    border-top: 1px solid rgba(224, 225, 226, 0.9);
+}
+.sidenav li.active
+{
+    background-color:var(--white)
+}
+.sidenav li.active a.sidenav-link i.nav-icon
+/* .sidenav li:hover a.sidenav-link i.nav-icon */
+{
+    color:var(--white) !important;
+    background-color: var(--primary) !important;
+}
+.sidenav li.nav-item a.sidenav-link i.nav-icon
+{
+    background-color: var(--white);
+}
+.sidenav li.active a.sidenav-link
+/* .sidenav li:hover a.sidenav-link */
+{
+    color:var(--sidenav-text-active);
+}
+a.sidenav-link
+{
+    color: var(--sidenav-gray);
+    font-family: "Open sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* border-radius: 18px; */
+    /* 18px */
+    padding: 15px
+}
+.nav-icon {
+    box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+    border-radius: 8px;
+    background-color: var(--primary);
+    transition: .3s all;
+    text-align: center;
+    width: 30px;
+}
